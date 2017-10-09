@@ -4,11 +4,15 @@
   "version": "0.1",
   "description": "Hides your facebook news feed so you can get your life back",
   "icons": {
-    "48": "icons/fbkiller-48.png"
+    "48": "icons/fbkiller48.png",
+    "96": "icons/fbkiller96.png"
   },
   "content_scripts": [
     {
-      "matches": ["*://*.facebook.com/*", "*://www.facebook.com/*"],
+      "matches": [
+        "*://*.facebook.com/*",
+        "*://*.linkedin.com/*"
+      ],
       "js": ["fbkiller.js"]
     }
   ]
